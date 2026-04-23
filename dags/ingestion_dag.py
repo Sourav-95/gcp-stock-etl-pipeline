@@ -1,4 +1,3 @@
-# dags/ingestion_dag.py
 # Runs daily. Triggers the ingestion script on Compute Engine via SSH/BashOperator.
 # On success, ETL_Orchestrate.py's ExternalTaskSensor unblocks the next stage.
 
