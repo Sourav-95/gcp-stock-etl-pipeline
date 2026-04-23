@@ -1,0 +1,24 @@
+# config.yaml — unified config for all pipeline stages
+# Note: process_date is overridden at runtime by Airflow {{ ds }} via --date arg
+
+gcp:
+  project_id: "your-project-id"
+  bucket: "your-bucket"
+  dataset: "your_dataset"
+  ticker_table: "ticker_master"       # BQ table to read ticker list from
+
+partition:
+  date_format: "%Y-%m-%d"
+
+paths:
+  raw_base: "gs://your-bucket/raw-yfinance/"
+  archive_base: "gs://your-bucket/archive-yfinance/"
+
+bq:
+  dataset: "your_dataset"
+  table: "yfinance_flat_table"
+  control_table: "pipeline_control"
+  write_mode: "append"
+
+runtime:
+  process_date: "2026-04-23"   # fallback; always overridden by Airflow --date arg
