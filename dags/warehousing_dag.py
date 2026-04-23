@@ -1,4 +1,3 @@
-# dags/warehousing_dag.py
 # Triggered by ETL_Orchestrate.py after transformation completes.
 # SQL is defined as string constants here — NOT loaded via open() at module
 # scope, which would crash Airflow DAG parsing if the file path is missing.
