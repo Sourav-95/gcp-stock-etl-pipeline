@@ -5,7 +5,8 @@ Instead of simple scripts, this project implements a multi-stage data lakehouse 
 ## Reliable Data Acquisition: 
 Automating the retrieval of global ticker data, ensuring that the ingestion layer is decoupled from storage to prevent data loss.
 
-## Scalable Distributed Processing: Utilizing big data frameworks to handle transformations that would be too heavy for standard traditional servers, ensuring the pipeline can scale as more tickers or historical years are added.
+## Scalable Distributed Processing: 
+Utilizing big data frameworks to handle transformations that would be too heavy for standard traditional servers, ensuring the pipeline can scale as more tickers or historical years are added.
 
 
 ## Relational Data Modeling: 
