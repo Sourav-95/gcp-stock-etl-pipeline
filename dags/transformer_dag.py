@@ -1,4 +1,3 @@
-# dags/transformer_dag.py
 # Triggered by ETL_Orchestrate.py (schedule_interval=None → never runs on its own).
 # Submits the PySpark job to Dataproc, passing the Airflow execution date
 # so the job always processes the correct partition instead of the config default.
