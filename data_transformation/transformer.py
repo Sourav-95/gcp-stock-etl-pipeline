@@ -4,9 +4,6 @@ Called by main.py after read_json().
 from pyspark.sql.functions import col, when, lit, round as spark_round
 from pyspark.sql.types import StructType
 
-
-
-
 # JSON keys that start with digits are illegal in BigQuery column names.
 # Spark reads them fine (StructField name is just a string), but we must
 # rename before writing to BQ.
